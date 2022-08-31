@@ -13,13 +13,3 @@ public:
 		return ans;
 	}
 };
-
-int main() {
-	Solution solution = Solution();
-	vector<int> nums = { 2,5,1,3,4,7 };
-	int n = 3;
-	nums = solution.shuffle(nums, n);
-	for (int i = 0; i < 2 * n; i++) {
-		printf("%d ", nums[i]);
-	}
-}
