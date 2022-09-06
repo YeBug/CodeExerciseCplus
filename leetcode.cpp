@@ -1,12 +1,12 @@
 #include <vector>
-#include "1475_finalPrices.cpp"
+#include<string>
+#include<iostream>
+#include "828_uniqueLetterString.cpp"
+
 using namespace std; 
 
 int main() {
 	Solution solution = Solution();
-	vector<int> prices = { 8,4,6,2,3 };
-	prices = solution.finalPrices(prices);
-	for (int i : prices) {
-		printf("%d", i);
-	}
+	string str = "leetcode";
+	cout << solution.uniqueLetterString(str)<<endl;
 }
