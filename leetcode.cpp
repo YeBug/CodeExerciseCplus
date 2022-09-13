@@ -1,14 +1,14 @@
 #include <vector>
 #include<string>
 #include<iostream>
-#include "667_constructArray.cpp"
+#include "670_maximumSwap.cpp"
 
 using namespace std; 
 
 int main() {
+	int num;
+	cin >> num;
 	Solution solution = Solution();
-	auto ans = solution.constructArray(5, 3);
-	for (auto i : ans) {
-		cout << i << " ";
-	}
+	auto ans = solution.maximumSwap(num);
+	cout << ans << endl;
 }
