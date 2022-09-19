@@ -1,14 +1,15 @@
 #include <vector>
 #include<string>
 #include<iostream>
-#include "670_maximumSwap.cpp"
+#include "1636_frequencySort.cpp"
 
 using namespace std; 
 
 int main() {
-	int num;
-	cin >> num;
+	vector<int> nums = { -1,1,-6,4,5,-6,1,4,1 };
 	Solution solution = Solution();
-	auto ans = solution.maximumSwap(num);
-	cout << ans << endl;
+	solution.frequencySort(nums);
+	for (int i : nums) {
+		cout << i << " ";
+	}
 }
