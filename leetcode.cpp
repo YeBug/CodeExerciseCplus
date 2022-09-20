@@ -1,15 +1,12 @@
 #include <vector>
 #include<string>
 #include<iostream>
-#include "1636_frequencySort.cpp"
+#include "698_canPartitionKSubsets.cpp"
 
 using namespace std; 
 
 int main() {
-	vector<int> nums = { -1,1,-6,4,5,-6,1,4,1 };
+	vector<int> nums = { 730, 580, 401, 659, 5524, 405, 1601, 3, 383, 4391, 4485, 1024, 1175, 1100, 2299, 3908 };
 	Solution solution = Solution();
-	solution.frequencySort(nums);
-	for (int i : nums) {
-		cout << i << " ";
-	}
+	cout<<solution.canPartitionKSubsets(nums, 4)<<endl;
 }
