@@ -1,13 +1,15 @@
 #include <vector>
 #include<string>
 #include<iostream>
-#include "1640_canFormArray.cpp"
+#include "missingTwo.cpp"
 
 using namespace std; 
 
 int main() {
-	vector<int> nums = { 91,4,64,78 };
-	vector<vector<int>> pieces = { {78}, {4, 64}, {91} };
+	vector<int> nums = { 1, 2, 3, 4, 6 };
 	Solution solution = Solution();
-	cout<<solution.canFormArray(nums, pieces) << endl;
+	auto ans = solution.missingTwo(nums);
+	for (int i : ans) {
+		cout << i << " ";
+	}
 }
