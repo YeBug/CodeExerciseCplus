@@ -1,15 +1,13 @@
 #include <vector>
 #include<string>
 #include<iostream>
-#include "missingTwo.cpp"
+#include "checkPermutation.cpp"
 
 using namespace std; 
 
 int main() {
-	vector<int> nums = { 1, 2, 3, 4, 6 };
+	string s1 = "asdvbc";
+	string s2 = "asddbc";
 	Solution solution = Solution();
-	auto ans = solution.missingTwo(nums);
-	for (int i : ans) {
-		cout << i << " ";
-	}
+	cout<<solution.checkPermutation(s1, s2);
 }
